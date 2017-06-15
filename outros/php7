@@ -37,8 +37,15 @@ Cliente - Servidor
 GIT
 	- Versionamento, SCM (Gerenciador de controle de versão).
 	- git clone <link>
-	- GITHUB - BITBUCKET
+	- GITHUB (Publico | Privado Pago) - BITBUCKET (Privado e Publico) SC. | Repositorio de códigos.
 	- git clone <link> <nome da pasta>
 	- git init
 	- git add <itens | . | * | --all > (Area de espera do commit).
-	- git commit - m "texto"
+	- git commit - m "texto"	
+	- git remote add origin <link> 
+	- git config --global (todos projetos, se deixar sem somenta na pasta usada) user.name
+	- git config --global user.name
+	- git config -- global user.email
+	
+
+
