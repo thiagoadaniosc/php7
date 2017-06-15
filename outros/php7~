@@ -1,0 +1,43 @@
+Anotações PHP 7
+
+Certificado UDEMY
+Certificado HCODE - Receber horas complementar, fazer projeto final.
+
+
+História PHP - Ramus Lerdof
+	- CGI ?
+	- As primeira versões eram limitadas, atualmente é muito 		  robusta.
+	- Tipagem Fraca (Tipagem Não Obrigatoria).
+	- POO
+	- Versão 6 descartada, versão 7 lançada 2015
+
+Ambiente:
+
+	- Apache, Servidor WEB, Linux.
+	- Instaladores, em casa até vai, em produção não (Serviço do 		  pessoal da Infraestrutura).
+	- HTTPD.CONF - Arquivo de configurações Apache.
+
+	- PHP.INI - PHP CONF
+	- SSL - HTTPS:443
+	- MYSQL: 3306
+
+IDE X EDITOR
+
+	- IDE: pago, atalhos, debugador.
+	- Editor: Melhor programador.
+	- ser especialista na linguagem, não na ide ou framework.
+	- "" = Identifica código html
+	- '' = Literal
+
+Cliente - Servidor
+
+	- Request - requisição
+	- Response - resposta
+
+GIT
+	- Versionamento, SCM (Gerenciador de controle de versão).
+	- git clone <link>
+	- GITHUB - BITBUCKET
+	- git clone <link> <nome da pasta>
+	- git init
+	- git add <itens | . | * | --all > (Area de espera do commit)
