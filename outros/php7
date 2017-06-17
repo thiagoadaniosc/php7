@@ -46,6 +46,66 @@ GIT
 	- git config --global (todos projetos, se deixar sem somenta na pasta usada) user.name
 	- git config --global user.name
 	- git config -- global user.email
-	
+	- git pull --rebase | Erro de update
+	- git pull origin master
+	- (git compara no pull, Versão atual com antiga se for 		diferente gera conflito).
+	- Conflito
 
+Variaveis
+	- String ("",'').
+	- Variavel: pode mudar, fica na memoria.
+	- Começar letra minuscula, case sencitive, Não começar com 		  numero (caractere special _);
+	- phpdocumentor.org
+	- Nomes reservado
+	- Garbagercolletor (PHP)
+	- unset() - > limpar variaveis
+	- isset -> Verificar se variavel existe
+	- concatenação (var1.var2)
+	- "" : considera variaveis. '' - > literal
+	- php antigo-> somar variaveis de tipos     		  diferente (joão1 + 2 = joao3). php7-> removido.
+	- 8 tipos de dados basicos(inteiro, string, float, boolean), Compostos (array, objetos) e especiais (resource, null).
+	- Variaveis auto explicativas.
+	- evitar usar "" ou '' em numeros.
+	- fopen();
+	- nulo = ausencia de valor (destruir) - vazio = não exista conteudo; not existe.
+	- $_GET[""]; Metodo HTTP GET URL (?var=valor&var1=valor1);
+	- $_POST[""];
+	- URL = URI(enderço) + queryString(?var=value);
+	- $_SERVER; Usar principalmente em sistemas de log. SCRIPT_NAME | REMOTE_ADDR
+
+-Scopo de Variavél 
+	- Alcançe de uma variável em arquivos
+	- $_SESSION[];
+	- funções, arquivo e global
+	- $this-> = class
+	- global $nome = para usar variavel global de arquivo
+	- Operador de String (=.)
+	- Operador Complexo (var.="value")-> Junção de variaveis
+	- Operadores Aritimeticos: /
+	- += Soma | / div | * multi | % modulo (var/2=0 = par) (resto da divisão)
+	- ** elevado
+	- Operadores de Comparação (<> , ==, !=, !===, ===)
+	- Novos operadoresm PHP 7 (<=> - Spaceship | Compara os valor | se A > B = 1 se A==B = 0 se B > A == -1)
+	-  Null Coalesce ($email = isset($_POST['email']) ? $_POST['email'] : 'valor padrão';) 
+	- Operadores Incrementais e Decrementais.
+	- ++$var $var++, --$var $var--
+	- Precedencia de operadores ((define precedencia)<- ) | interpolação de variaveis  | So php tem ("",'').
+	- Sublime (win+alt+n = /caminho/nome.php).
+	- strtoupper(); | strtolower();
+	- ucwords(); muda todas as primeiras letras maisculas
+	- ucfirst(); Muda apenas a primeira.
+	- str_replace();
+	- strpos($var, "");
+ 	- substr($var,init,end);
+	- strlen($frase);
+	
+Include e Requiri
+	
+	- include ''; | Erro no arquivo de include ficar de olho.
+	- '../inc/' | Nunca subir mais de um diretorio.	
+	- requiri | tem de exister o arquivo e estar funcionando perfeitamento, caso não gera um erro fatal e para o código.
+	- include | tenta funcionar msm se nem exista, mais recursos | dir <include Patch> (conf php.ini) para funcionar em todos os projetos (Projetos de intranet é interesante) | include permite trazer um arquivo de outro site.
+	- acesso via API, no curso.
+	- include_once() ou require_once() - traz o arquivo uma vez 
+	- PHP7 -> erros fatáis não interrompe, gera uma excesão.
 
