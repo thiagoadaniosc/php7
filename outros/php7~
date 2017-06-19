@@ -107,5 +107,12 @@ Include e Requiri
 	- include | tenta funcionar msm se nem exista, mais recursos | dir <include Patch> (conf php.ini) para funcionar em todos os projetos (Projetos de intranet é interesante) | include permite trazer um arquivo de outro site.
 	- acesso via API, no curso.
 	- include_once() ou require_once() - traz o arquivo uma vez 
-	- PHP7 -> erros fatáis não interrompe, gera uma excesão
+	- PHP7 -> erros fatáis não interrompe, gera uma excesão.
+
+Estruturas de controles (Comandos de descição) (if, while, for)
+	- if, else if, if
+	- Operador Ternario (boolean) ? Result 1 : else1
+	- Cadeias de if para testar condições, iniciar do menor para o maior.
+	- switch case | ja se sabe as condições | valor unico, igual.
+	
 
