@@ -115,4 +115,9 @@ Estruturas de controles (Comandos de descição) (if, while, for)
 	- Cadeias de if para testar condições, iniciar do menor para o maior.
 	- switch case | ja se sabe as condições | valor unico, igual.
 	
+Laços de Repetição
+
+	- for,foreach, while
+	- Depois de 30 a 60 segundos o apache para de executar.
+	- solicitar serviço dedicado, pois em não dedicados memorias e recursos são compartilhados, caso um site seja atacado o seu tbm sera afetado.
 
