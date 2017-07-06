@@ -121,3 +121,22 @@ Laços de Repetição
 	- Depois de 30 a 60 segundos o apache para de executar.
 	- solicitar serviço dedicado, pois em não dedicados memorias e recursos são compartilhados, caso um site seja atacado o seu tbm sera afetado.
 
+Arrays
+
+	end(array[]); // ultima posição do array
+	array_push($array, dados); // add elemento array
+	Serialização - Array, Json_encode, Json_encode // integração de sistemas 		(Interoperabilidade de sistemas) | JSON(JS) > XML = true
+	Constante - valor unico | define(name, value, true1) / 1 - remove case sensitive 
+	php7 - array constante
+	DIRECTORY_SEPARATOR;| traz o tipo de barra de diretorio /->linux \ windows
+
+Sessões
+	Local x Sessão | local no arquivo ou inclida | sessão -> GLOBAL, enquanto está conectado
+
+	PHP configurado para sessão não iniciar altomaticamente (ele não cria sessão)
+	para criar, session_start()// tem de ter em todos os arquivos php; - $_SESSION | para alterar, mudar arquivo php.ini, session_auto_start | hospedagem compartilhada, não muda.
+	Usar arquivo de configuração, para esses tipos de funções e constantes
+	APAGAR - UNSET - session_unset-> limpa dados da sessão | continua a sessão, session_destroy -> destroi uma sessão | Novo acesso
+	ID sessão, Identificação unica, cada servidor | id nunca se repede | gerado pelo servidor
+	
+
