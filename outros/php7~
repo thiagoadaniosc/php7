@@ -128,7 +128,7 @@ Arrays
 	Serialização - Array, Json_encode, Json_encode // integração de sistemas 		(Interoperabilidade de sistemas) | JSON(JS) > XML = true
 	Constante - valor unico | define(name, value, true1) / 1 - remove case sensitive 
 	php7 - array constante
-	DIRECTORY_SEPARATOR;| traz o tipo de barra de diretorio /->linux \ windows
+	DIRECTORY_SEPARATOR;| traz o tipo de barra de diretorio /->linux \ windows		
 
 Sessões
 	Local x Sessão | local no arquivo ou inclida | sessão -> GLOBAL, enquanto está conectado
@@ -138,5 +138,55 @@ Sessões
 	Usar arquivo de configuração, para esses tipos de funções e constantes
 	APAGAR - UNSET - session_unset-> limpa dados da sessão | continua a sessão, session_destroy -> destroi uma sessão | Novo acesso
 	ID sessão, Identificação unica, cada servidor | id nunca se repede | gerado pelo servidor
-	
+	- session_id
+	- session_regenerate_id
+	- session_regenerate_id (gerar nova id, para segurança	)
+	- session_status
+
+User function
+	- Função retorna valor
+	- Sub rotina não retorna
+	- Função parametro pré-definido exemplo3 (function ($var = "padrão")) | Parametro obrigatorio colocar a esquerda
+	- func_get_args, retorna todos os argumentos colocado em uma função, mesmo que essa não tenha argumentos definidos
+	- Parametros de valor e referencia (ponteiros) 
+	ex: function (&$var)
+	- PHP7 -> recursos removido, e novos recursos
+	- PHP7 Funções, Declaração de parametro e retorno. {varios parametros}
+	- Fracamente tipada, flexibilidade, tomar cuidado com as boas práticas.
+	-- int ...$valores; php7 / Tipos escalares
+	-- Trabalhar com tipagem
+	-- Funções Recursivas (Começa, quando chama ela volta e executa o mesmo pedaço) (Exemplo9 estudar)
+	-- Funcões Anonimas (callback) // Uma funçao sem retorno, mais ao final do processo faz outra coisa
+
+
+
+Datas
+	- Date, Time.
+	- Date ("d/m/Y") // sempre do servidor
+	- set locale
+	- [valor padrão]
+	- strtotime("data") -> String para timestamp
+	- date("formato", $timestamp)
+	- TimeSamp (adicionar dias apartir de uma data)
+	- exemplo, pedido feito hoje add + 20 dias para entrega e assim gerar a data, ótimo para banco de dados
+	- setlocale(LC_ALL, "","","")
+	-strftime()
+	- locale -a
+	- ucwords() -> primeiras letras maiuscula
+	- DateTime()
+	- PHP não sabe oque é data
+	- DateTime();
+	- Data Interval(); ADD dias a data, muito util também com objetos
+
+
+POO (Programação Orientada a Objetos) -- OOP
+
+	-- Aplicabilidade
+	-- Classe, Atributo, Métodos (Abstração)
+	-- Objeto (Instancia da classe) new -> VARIAVEL QUE REPRESENTA UMA CLASSE
+	-- 
+
+
+// Trocar local da imagem por variavel, exemplo: $img1 com o local
+
 
