@@ -184,9 +184,60 @@ POO (Programação Orientada a Objetos) -- OOP
 	-- Aplicabilidade
 	-- Classe, Atributo, Métodos (Abstração)
 	-- Objeto (Instancia da classe) new -> VARIAVEL QUE REPRESENTA UMA CLASSE
-	-- 
+	--  $this->var;
+	-- namespace, use model\NameClass as NameClass ;
+	-- Nome de classe maiusculo, diretório minisculo, método minusculo, variavel minusculo, segundas palavras maiusculo ou _.
+	-- Atributos, Métodos.
+	-- string, int
+	-- Uma variavel pode ser setada com qualquer tipo de valor, e retornar apenas um tipo só.
+	-- Static ->  classe::metodo.
+	-- throw new Exception("CPF Informado não é valido", 1);
+	-- __construct, __destruct -> usado principalmente em logs
+	-- __toString -> quando da um echo direto na variavél, no Objeto
+
+- Encapsulamento
+
+	-- Public -> Todos.
+	-- Protected -> Métodos da classe e herança.
+	-- private -> Em qualquer lugar da classe, não de classes filhas. 
+	-- get_class -> nome da classe, :D.
+	-- ($pg = "Programador"; // PHP é fera 
+	     $programador = new $pg;).
+	-- Abstração* -> Classe generica para ser utilizada por diversas outras (Código inteligente).
+	-- (UML)
+	-- Herança
+	-- Interface, padrões de Classes.
+		-- Iterface obriga métodos, mas não de adicionar outros.
+		-- Uma classe para várias Interfaces.
+	-- Classe Abstrata, não pode ser instanciada, ela so server como classe PAI para outras classes.
+	-- polimorfismo
+		-- parent::método, pega resultado da classe pai
+	-- Auto Load
+		-- __autoload($classe); Chamar uma vez
+		-- spl_autoload_register("Função"); 
+		-- spl_autoload_register(function () {		
+		}); 
+		-- Diretorios no windows não são case sensitive, linux é.
+	-- Namespaces e Padrão
+		--  Código Interoperavel -> DIRECTORY_SEPARATOR (/ou\)
+		-- __toString -> Método mágico para quando der echo na classe
+		-- namespace name;
+		-- use dir\namespace;
+
+
+
+
+
+
 
 
 // Trocar local da imagem por variavel, exemplo: $img1 com o local
+// Gerador de HTML, salvar no banco endereço
+// Pasta -> Minusculas todas letras ou Maiuscula de acordo com a classe caso orientada a objeto
+// Classe ->  Primeira palavra em Maiuscula
+// Variaveis -> Palavra inicia com letra minuscula, novas palavras na variavel inicia com maiuscula
+// Método -> O mesmo que váriaveis
+// Getters e seters -> Restrição
+// Json_view CHROME Extenção
 
 
