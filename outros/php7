@@ -223,6 +223,46 @@ POO (Programação Orientada a Objetos) -- OOP
 		-- __toString -> Método mágico para quando der echo na classe
 		-- namespace name;
 		-- use dir\namespace;
+SQL
+	create database dbphp7;
+             use dbphp7;
+	CREATE TABLE tb_usuarios (
+	idusuario INT NOT NULL auto_increment PRIMARY KEY,
+    	des_login varchar(64) not null,
+    	des_senha varchar(256),
+    	dt_cadastro timestamp NOT NULL DEFAULT current_timestamp() // Função para pegar hora local
+	);
+	update tb_usuarios SET des_senha = '123456';
+	DELETE FROM tb_usuarios where idusuario = 1  ;
+	truncate TABLE tb_usuarios; -> Deleta todos os dados da tabela e reseta.
+	--
+	-- Mysqli
+		-- $stmt -> $conn->prepare($query);
+		-- $stmt->bind_param("ss"); S-> strin, I-> int
+		-- $stmt->execute();
+		-- while ($row =  $result->fetch_assoc())
+		-- array_push($data, $row);
+	-- PDO
+		--new PDO("mysql:dbname=php7;host")
+		-- Transação PDO.
+		-- Padrão DSN. 
+		$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+	
+		-- SQLSERVER
+			-- Versão, Edição
+			-- Instancia SQL
+			-- (sa,root)
+			-- CREATE TABLE tb_usuarios (
+			idusuario INT NOT NULL IDENTITY PRIMARY KEY, IDENTITY(auto_increment)
+			des_login varchar(64) not null,
+			des_senha varchar(256),
+			dt_cadastro timestamp NOT NULL DEFAULT  DEFAULT GETDATE(). (GETDATE, current_timestamp)
+			);
+			// Verificar Verão sql,driver odbc, para versão php e versão php x64 e x86
+			//ConnectionPooling estado de conexão
+			-- $conn = new PDO("sqlsrv:Database=dbphp7;server=localhost\SQLEXPRESS;ConnectionPooling=0", "sa", "root");
+
+
 
 
 
@@ -239,5 +279,9 @@ POO (Programação Orientada a Objetos) -- OOP
 // Método -> O mesmo que váriaveis
 // Getters e seters -> Restrição
 // Json_view CHROME Extenção
+
+//bootstrap-tagsinput, PASSAR VIA UM INPUT 
+// Html 5 input hidden, existe substituto mais n sei
+// Multi Thread
 
 
