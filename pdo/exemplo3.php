@@ -1,13 +1,13 @@
 <?php 
 
-$conn = new PDO("mysql:host=localhost;dbname=dbphp7", "root" , "root");
+$conn = new PDO("mysql:host=localhost;dbname=dbphp7", "root" , "root"); // Ordem não importa
 
-$stmt = $conn->prepare("INSERT INTO tb_usuarios (des_login, des_senha) VALUES (:LOGIN,:PASSWORD)");
+$stmt /*Comando Homologação*/ = $conn->prepare("INSERT INTO tb_usuarios (des_login, des_senha) VALUES (:LOGIN,:PASSWORD)");
 $login = "jose";
 $password = "13224";
 
 $stmt->bindParam(':LOGIN',$login); 
-$stmt->bindParam(':PASSWORD',$password); 
+$stmt->bindParam(':PASSWORD',$password);
 
 $stmt->execute();
 

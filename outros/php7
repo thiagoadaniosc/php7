@@ -262,6 +262,16 @@ SQL
 			//ConnectionPooling estado de conexão
 			-- $conn = new PDO("sqlsrv:Database=dbphp7;server=localhost\SQLEXPRESS;ConnectionPooling=0", "sa", "root");
 
+		-- PDO 
+			-- CRUD
+			--$conn->beginTransaction(); 
+			-- Transação Banco de dados
+			-- Commit, rollback
+			// Drop destroi a estrutura
+			// Conjunto de rotinas mais de uma query
+
+		- DAO
+			-- Classe name extends PDO
 
 
 
